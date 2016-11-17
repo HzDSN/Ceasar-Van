@@ -105,14 +105,14 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                MessageBox.Show("您的操作有错误。请仔细阅读使用说明后重试。","错误",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("您的操作有错误。请仔细阅读使用说明后重试。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private string getClassName()
         {
-            string className=string.Empty ;
-            if (checkBox1.Checked )
+            string className = string.Empty;
+            if (checkBox1.Checked)
             {
                 className = className + checkBox1.Text + "，";
             }
@@ -124,7 +124,7 @@ namespace WindowsFormsApplication1
             {
                 className = className + checkBox3.Text + "，";
             }
-            if(className.Length>0 && className.Substring(className.Length - 1)=="，")
+            if (className.Length > 0 && className.Substring(className.Length - 1) == "，")
             {
                 className = className.Substring(0, className.Length - 1);
             }
